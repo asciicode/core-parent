@@ -75,6 +75,8 @@ public abstract class Validator<T>
   public abstract boolean validate(T value, Schema<T> schema, MongoDatastore datastore, String path,
     List<JsonError> jsonErrors);
 
+  // public abstract boolean validate(T value, Schema<T> schema, String path, List<JsonError> jsonErrors);
+
   @JsonIgnore
   public abstract Map<String, String> getDefaultParams();
 

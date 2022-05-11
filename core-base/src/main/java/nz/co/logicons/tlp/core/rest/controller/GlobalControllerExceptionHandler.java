@@ -107,6 +107,7 @@ public class GlobalControllerExceptionHandler
     Map<String, Object> errorMap = new HashMap<String, Object>();
     for (JsonError error : ex.getJsonErrors())
     {
+      // UUID errorCode = UUID.randomUUID();
       if (error instanceof SimpleJsonError)
       {
         SimpleJsonError sjErr = (SimpleJsonError) error;
